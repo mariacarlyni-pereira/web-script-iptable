@@ -1,0 +1,78 @@
+body { 
+    background-color: #000; 
+    color: #33ff33; 
+    font-family: 'Courier New', Courier, monospace; 
+    padding: 20px; 
+}
+
+.terminal { 
+    max-width: 850px; 
+    margin: auto; 
+    border: 1px solid #33ff33; 
+    padding: 20px; 
+    box-shadow: 0 0 20px rgba(51, 255, 51, 0.15); 
+}
+
+.header { 
+    margin-bottom: 20px; 
+    border-bottom: 1px solid #33ff33; 
+    padding-bottom: 10px; 
+    font-weight: bold;
+}
+
+.input-area { 
+    display: flex; 
+    gap: 10px; 
+    align-items: center; 
+    margin-bottom: 15px; 
+}
+
+.prompt { font-weight: bold; margin-right: 5px; }
+
+input, select { 
+    background: #050505; 
+    border: 1px solid #33ff33; 
+    color: #33ff33; 
+    padding: 8px; 
+    outline: none; 
+}
+
+input::placeholder { color: #116611; }
+
+button { 
+    background: #33ff33; 
+    color: #000; 
+    border: none; 
+    padding: 8px 15px; 
+    cursor: pointer; 
+    font-weight: bold; 
+    text-transform: uppercase;
+}
+
+button:hover { background: #fff; }
+
+.divider { margin: 20px 0; color: #116611; }
+
+/* Estilização da Tabela */
+table { width: 100%; border-collapse: collapse; margin-top: 10px; }
+
+th { 
+    text-align: left; 
+    border-bottom: 1px solid #33ff33; 
+    padding: 10px; 
+    color: #000; 
+    background-color: #33ff33; /* Cabeçalho igual à Figura 1, mas em verde */
+}
+
+td { 
+    padding: 10px; 
+    border-bottom: 1px solid #114411; 
+    font-size: 0.9em;
+}
+
+/* Botões de Ação na Tabela */
+.btn-edit { background: transparent; color: #33ff33; border: 1px solid #33ff33; padding: 2px 8px; margin-right: 5px; font-size: 10px; }
+.btn-del { background: transparent; color: #ff3333; border: 1px solid #ff3333; padding: 2px 8px; font-size: 10px; }
+.btn-edit:hover, .btn-del:hover { background: #fff; color: #000; }
+
+.footer { margin-top: 20px; font-size: 10px; color: #116611; text-align: right; }

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>IP Terminal v2.0 - CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="terminal">
+        <div class="header">root@system:~$ ./manage-network --table</div>
+        
+        <div class="input-area">
+            <span class="prompt">></span>
+            <input type="text" id="ipInput" placeholder="IP_ADDRESS" autocomplete="off">
+            <input type="text" id="maskInput" placeholder="NETMASK" autocomplete="off">
+            <select id="versionInput">
+                <option value="v4">IPv4</option>
+                <option value="v6">IPv6</option>
+            </select>
+            <button onclick="adicionarIP()">ADICIONAR</button>
+        </div>
+
+        <div class="divider">------------------------------------------------------------</div>
+
+        <div class="output">
+            <table id="ipTable">
+                <thead>
+                    <tr>
+                        <th>IP</th>
+                        <th>MASK</th>
+                        <th>VERSION</th>
+                        <th>ACTIONS</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    </tbody>
+            </table>
+        </div>
+        <div class="footer">[SISTEMA OPERACIONAL ATIVO]</div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
